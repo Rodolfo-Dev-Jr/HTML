@@ -1,27 +1,22 @@
-<html>
+<html lang="pt-br">
 
 <body>
 
-    <header>
-        <h1>My First Website</h1>
-    </header>
+    <h2>Atribuição de Métodos</h2>
 
-    <nav>
-        <a href="#home">HomePage</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <p>Este formulário será enviado utilizando o método POST:</p>
 
-    <section>
-        <article>
-            <h2>Welcome</h2>
-            <p>This is my website.</p>
-        </article>
-    </section>
+    <form action="/action_page.php" target="_blank" method="post">
+        <label for="fname">Primeiro nome:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Sobrenome:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
 
-    <footer>
-        <p>Copyright 2026©</p>
-    </footer>
+    <p>Após enviar, observe que, ao contrário do método GET, os valores do formulário NÃO ficam visíveis na barra de endereços da
+        nova aba do navegador.</p>
+
 
 </body>
 
